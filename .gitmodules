@@ -1,0 +1,3 @@
+[submodule "selection/task"]
+	path = selection/task
+	url = git@github.com:maximus3/yandex_backend-selection-python_summer_2022.git
