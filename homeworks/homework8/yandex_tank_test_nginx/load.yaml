@@ -1,0 +1,18 @@
+overload:
+  enabled: true
+  package: yandextank.plugins.DataUploader
+  token_file: "token.txt"
+phantom:
+  address: 127.0.0.1:4000
+  header_http: "1.1"
+  headers:
+    - "[Host: some.host]"
+  uris:
+    - "/token?id=id&timestamp=1"
+  load_profile:
+    load_type: rps
+    schedule: const(10, 1m)
+console:
+  enabled: true
+telegraf:
+  enabled: false

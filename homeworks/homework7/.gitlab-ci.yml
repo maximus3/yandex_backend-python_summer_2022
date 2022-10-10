@@ -1,0 +1,8 @@
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - echo $CGYM_ASTRONOMY_PAPER > paper.txt
+    - echo $CGYM_ASTRONOMY_PAPER > /home/paper.txt

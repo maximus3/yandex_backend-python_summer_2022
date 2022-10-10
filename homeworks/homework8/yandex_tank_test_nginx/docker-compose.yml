@@ -1,0 +1,7 @@
+version: "3.2"
+services:
+  tester:
+    image: direvius/yandex-tank
+    volumes:
+      - .:/var/loadtest
+    network_mode: "host"
